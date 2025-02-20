@@ -1,0 +1,26 @@
+/*styles.css
+* css for html investment calculator
+* Pessie Mittelman
+* 2/24/25 */
+
+header {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: -25px;
+}
+body {
+    margin: 5%;
+}
+h4 {
+    margin-top: 40px;
+    text-align: center;
+}
+form {
+    font-size: medium;
+}
+#retirementSavings {
+    font-size: 25px;
+    color: #1d7d74;
+}
