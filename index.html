@@ -1,0 +1,48 @@
+<!--index.html
+    Investment Calculator
+    Pessie Mittelman
+    2/24/25 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Investment Growth Calculator</title>
+        <link rel="stylesheet" href="materialize.css"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="icon" type="image/svg+xml" href="investment.svg"/>
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h4>
+                Investment Growth Calculator
+            </h4>
+        </header>
+        <section>
+            <h4>
+                Plan Your Financial Future with Our Compound Interest Calculator
+            </h4>
+            <p>Investing wisely today can lead to financial freedom tomorrow. Our Compound Interest Investment Calculator helps you visualize how your savings will grow over time. Simply enter:<br>
+            <br><b>Your Initial Investment</b> – The amount you’re starting with.&ensp;|&ensp;<b>Annual Interest Rate</b> – The expected yearly return on your investment.&ensp;|&ensp;<b>Year of Retirement</b> – When you plan to retire.<br><br>            
+            With just a click, our smart calculator will project your future investment value, considering the power of compound interest—where your earnings generate even more earnings over time!<br>
+            Start planning now and see how small investments today can lead to big rewards in the future!</p>
+        </section>
+
+        <form onsubmit="return getCompoundInterest()">
+            <p>Enter Current Amount of Money in Savings:
+            <input type="number" name="Initial Amount" id="initialAmount"/>
+            Enter Interest Rate Percentage:
+            <input type="number" name="Interest Rate" id="interestRate"/>
+            Enter Expected Year of Retirement:</p>
+            <input type="number" name="Retirement Year" id="year"/>
+            <br>
+            <input type="submit" value="Submit" class="btn">
+            <br>
+            <br>
+        </form>
+
+        <p><strong>Your expected savings at retirement:</strong></p>
+        <p id="retirementSavings"></p>
+    </body>
+</html>
