@@ -15,7 +15,9 @@ function getCompoundInterest() {
         currency: 'USD',
     });
 
-    document.getElementById("retirementSavings").innerHTML = `${USDollar.format(total)}`;
+    let output = "Your expected savings at retirement is " + `${USDollar.format(total)}` + "."
+
+    document.getElementById("retirementSavings").innerHTML = output
 
     // Stops the form from submitting and refreshing 
     return false; 
